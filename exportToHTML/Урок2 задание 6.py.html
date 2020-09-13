@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Урок2 задание 6.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Урок2 задание 6.py</font>
+</center></td></tr></table>
+<pre><span class="s0">good = []</span>
+<span class="s0">specification = {</span><span class="s1">'наименование'</span><span class="s0">: </span><span class="s1">''</span><span class="s2">, </span><span class="s1">'цена'</span><span class="s0">: </span><span class="s1">''</span><span class="s2">, </span><span class="s1">'количество'</span><span class="s0">: </span><span class="s1">''</span><span class="s2">, </span><span class="s1">'артикул'</span><span class="s0">: </span><span class="s1">''</span><span class="s0">}</span>
+<span class="s0">analytics = {</span><span class="s1">'наименование'</span><span class="s0">: []</span><span class="s2">, </span><span class="s1">'цена'</span><span class="s0">: []</span><span class="s2">, </span><span class="s1">'количество'</span><span class="s0">: []</span><span class="s2">, </span><span class="s1">'артикул'</span><span class="s0">: []}</span>
+<span class="s0">num = </span><span class="s3">0</span>
+<span class="s2">while True</span><span class="s0">:</span>
+    <span class="s2">if </span><span class="s0">input(</span><span class="s1">'Для выхлда из программы нажмите &quot;E&quot;, для продолжения &quot;Enter&quot;: '</span><span class="s0">).upper() == </span><span class="s1">'E'</span><span class="s0">:</span>
+        <span class="s2">break</span>
+    <span class="s0">num += </span><span class="s3">1</span>
+    <span class="s2">for </span><span class="s0">f </span><span class="s2">in </span><span class="s0">specification.keys():</span>
+        <span class="s0">acquisition = input(</span><span class="s1">f'Введите значение артикул &quot;</span><span class="s2">{</span><span class="s0">f</span><span class="s2">}</span><span class="s1">&quot;: '</span><span class="s0">)</span>
+        <span class="s0">specification[f] = int(acquisition) </span><span class="s2">if </span><span class="s0">(f == </span><span class="s1">'цена' </span><span class="s2">or </span><span class="s0">f == </span><span class="s1">'количество'</span><span class="s0">) </span><span class="s2">else </span><span class="s0">acquisition</span>
+        <span class="s0">analytics[f].append(specification[f])  </span><span class="s4"># Добавляем свойство в аналитику</span>
+    <span class="s0">good.append((num</span><span class="s2">, </span><span class="s0">specification))  </span><span class="s4"># Добавляем свойства в список товаров</span>
+    <span class="s0">print(</span><span class="s1">f'</span><span class="s2">\n </span><span class="s1">Текущая аналитика по товарам: </span><span class="s2">\n {</span><span class="s1">&quot;*&quot; </span><span class="s0">* </span><span class="s3">38</span><span class="s2">}</span><span class="s1">'</span><span class="s0">)</span>
+    <span class="s2">for </span><span class="s0">key</span><span class="s2">, </span><span class="s0">value </span><span class="s2">in </span><span class="s0">analytics.items():</span>
+       <span class="s0">print(</span><span class="s1">f'</span><span class="s2">{</span><span class="s0">key[:</span><span class="s3">25</span><span class="s0">]</span><span class="s2">:</span><span class="s1">&gt;30</span><span class="s2">}</span><span class="s1">: </span><span class="s2">{</span><span class="s0">value</span><span class="s2">}</span><span class="s1">'</span><span class="s0">)</span>
+    <span class="s0">print(</span><span class="s1">&quot;*&quot;</span><span class="s0">*</span><span class="s3">30</span><span class="s0">)</span>
+</pre>
+</body>
+</html>

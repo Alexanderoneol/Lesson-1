@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Урок 1 задание 4.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #6897bb;}
+.s3 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Урок 1 задание 4.py</font>
+</center></td></tr></table>
+<pre><span class="s0">num_select = int(input(</span><span class="s1">&quot;Произведите ввод целого положительного числаЖ &quot;</span><span class="s0">))</span>
+<span class="s0">max_value = num_select % </span><span class="s2">10</span>
+<span class="s0">num = num_select</span>
+
+<span class="s3">while </span><span class="s0">num &gt; </span><span class="s2">0</span><span class="s0">:</span>
+    <span class="s0">digit = num % </span><span class="s2">10</span>
+    <span class="s3">if </span><span class="s0">digit &gt; max_value:</span>
+        <span class="s0">max_value = digit</span>
+        <span class="s3">if </span><span class="s0">max_value == </span><span class="s2">9</span><span class="s0">:</span>
+            <span class="s3">break</span>
+
+    <span class="s0">num = num // </span><span class="s2">10</span>
+
+<span class="s0">print(</span><span class="s1">f&quot;Максимальная цфра вчисле </span><span class="s3">{</span><span class="s0">num_select</span><span class="s3">} </span><span class="s1">hdyf </span><span class="s3">{</span><span class="s0">max_value</span><span class="s3">}</span><span class="s1">&quot;</span><span class="s0">)</span></pre>
+</body>
+</html>
