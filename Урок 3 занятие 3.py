@@ -1,1 +1,0 @@
-def my_func(var_1 = 5, var_2 = 4, var_3 = 6):
