@@ -7,4 +7,6 @@ def div(var_1, var_2):
     except ZeroDivisionError:
         return "Division by zero excluded!"
     return round(div_num, 4)
+
+
 print(div(input("Enter first number - "), input("Enter second number - ")))
