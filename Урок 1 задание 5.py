@@ -1,6 +1,8 @@
 revenue = float(input("Введите показатели выручки (рубли) - "))
 cost_price = float(input("Введите показатели себестоимости (рубли) - "))
-result = revenue - coast_price
+
+result = revenue - cost_price
+
 if result > 0:
     print(f"Отличный результат! Ваш бизнес принес прибыль {result} рублей!")
     print(f"Рентабельность реализации составила {result / revenue:.3f}")
